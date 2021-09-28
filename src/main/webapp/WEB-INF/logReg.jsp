@@ -46,16 +46,21 @@
             <label for="password">Password</label>
             <input type="password" id="password" name="password"/>
         </p>
+        
         <input type="submit" value="Login!"/>
     </form>
-
-
-
-
-
-
-
-
-
-</body>
+    
+    <form  action='/edit' method='POST'>
+    <input type='hidden' name='hidden' value='email'>
+    <input type='email' name='thing_to_edit'>
+    <input type='submit' value='edit email'>
+    </form>
+    
+    <form  action='/edit' method='POST'>
+    <input type='hidden' name='hidden' value='birthday'>
+    <input type='text' name='thing_to_edit'>
+    <input type='submit' value='edit birthday'>
+    </form>
+    
+    </body>
 </html>
